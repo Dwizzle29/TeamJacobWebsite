@@ -1,0 +1,16 @@
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+}
+
+/* Larger Screens */
+@media screen and (min-width: 769px) {
+}
+
+/* Colors
+  #050f50 -dark blue
+   #3c6179 - medium blue
+   #71afd9 - light blue
+   #f6f5e9 - background
+   #b5d6a6 - light green
+   #5c6e54 - medium green
+   #2b3b1c - dark green*/

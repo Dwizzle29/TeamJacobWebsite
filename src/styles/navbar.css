@@ -1,0 +1,42 @@
+/* Smaller Screens */
+@media screen and (max-width: 768px) {
+  .header-container {
+    background-color: #050f50;
+  }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 769px) {
+  .header-container {
+    background-color: #050f50;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    color: #f6f5e9;
+    max-height: 200px;
+  }
+  .header-logo {
+    width: 100px;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .title-container {
+    display: flex;
+    align-items: center;
+  }
+  .nav-box a {
+    color: #f6f5e9;
+    text-decoration: none;
+  }
+}
+
+/* Colors
+#050f50 -dark blue
+ #3c6179 - medium blue
+ #71afd9 - light blue
+ #f6f5e9 - background
+ #b5d6a6 - light green
+ #5c6e54 - medium green
+ #2b3b1c - dark green*/

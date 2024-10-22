@@ -1,0 +1,124 @@
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+}
+
+/* Larger Screens */
+@media screen and (min-width: 769px) {
+  .img-container {
+    width: 100%;
+    background-color: rgb(62, 61, 59);
+    max-height: 556px;
+  }
+  .img-banner {
+    width: 100%;
+    max-height: 556px;
+    object-fit: cover;
+    opacity: 80%;
+  }
+  .circle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-content: center;
+    margin-inline: auto;
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-page {
+    margin-inline: 20px;
+  }
+  /* images */
+  .links-grid {
+    margin-block: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .link {
+    display: none;
+  }
+  .circle-img:hover .link {
+    display: flex;
+    margin-inline: auto;
+    margin-block: auto;
+    border-radius: 100px;
+    position: absolute;
+    color: #b5d6a6;
+    z-index: 100;
+    background-color: #3c61795c;
+    opacity: 900%;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .news-img {
+    width: 152px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .news-rectangle {
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .rectangle {
+    width: 532px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .one {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    margin-inline-start: 40px;
+    border: 1px solid #3c61795c;
+    padding: 10px;
+    width: 532px;
+    height: 250px;
+  }
+
+  .rectangle p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .two {
+    display: flex;
+    justify-content: end;
+    margin-inline-end: 40px;
+  }
+}
+
+/* global attributes */
+/* circle photos */
+.circle-box {
+  margin-inline: auto;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+}
+.circle-img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* Colors
+  #050f50 -dark blue
+   #3c6179 - medium blue
+   #71afd9 - light blue
+   #f6f5e9 - background
+   #b5d6a6 - light green
+   #5c6e54 - medium green
+   #2b3b1c - dark green*/
