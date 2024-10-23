@@ -5,11 +5,11 @@ export default function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-section-image">
-          <img src="Assets/tj-logo.png" alt="harmoni vinyls" />
+          <img src="Assets/tj-logo.png" alt="Team Jacob" />
           <div>
             <h3>main menu</h3>
             <ul>
-              <ol>about </ol>
+              <ol>About Us </ol>
               <ol>login </ol>
               <ol>vinyls </ol>
             </ul>
