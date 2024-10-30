@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../styles/footer.css";
 
 export default function Footer() {
@@ -5,41 +6,79 @@ export default function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-section-image">
-          <img src="Assets/tj-logo.png" alt="Team Jacob" />
           <div>
-            <h3>main menu</h3>
+            <h3>About Us</h3>
             <ul>
-              <ol>About Us </ol>
-              <ol>login </ol>
-              <ol>vinyls </ol>
+              <NavLink to="/about">
+                <ol>Team</ol>
+              </NavLink>
+              <NavLink to="/NotFound">
+                <ol>Team Profile</ol>
+              </NavLink>
+              <NavLink to="/NotFound">
+                <ol>Coaching</ol>
+              </NavLink>
+              <NavLink to="/NotFound">
+                <ol>Team Timeline</ol>
+              </NavLink>
+              <NavLink to="/NotFound">
+                <ol>
+                  <span className="mdi--instagram"></span>
+                </ol>
+              </NavLink>
             </ul>
           </div>
         </div>
         <div className="footer-section">
+          <div className="sign-up-email">
+            <p>Enter email to sign up for weekly news letters:</p>
+            <form onSubmit={search} className="form-email">
+              <div>
+                <label>Email: </label>
+                <input name="queryEmail" className="email-input" />
+                <button type="submit" className="btn">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <p className="email-text">email us: teamjacob@volleyball.com.au </p>
+          </div>
+        </div>
+        <div className="footer-section-2">
           <div>
-            <h3>help & support</h3>
+            <h3>Site Map</h3>
             <ul>
-              <ol>faqs </ol>
-              <ol>shipping information </ol>
-              <ol>refunds </ol>
-              <ol>orders </ol>
+              <NavLink to="/about">
+                <ol>About Us </ol>
+              </NavLink>
+              <NavLink to="/news">
+                <ol>News Letters</ol>
+              </NavLink>
+              <NavLink to="/rosters">
+                <ol>Rosters</ol>
+              </NavLink>
+              <NavLink to="/NotFound">
+                <ol>Results</ol>
+              </NavLink>
+              <NavLink to="/NotFound">
+                <ol>FAQs </ol>
+              </NavLink>
             </ul>
           </div>
         </div>
-        <div className="footer-section">
-          <div>
-            <h3>contact us</h3>
-            <p>email us @:</p>
-            <p>help@harmonivinyls.com.au</p>
-          </div>
-        </div>
-        <img
-          src="Assets/tj-logo.png"
-          alt="harmoni vinyls"
-          className="mobile-img"
-        />
       </div>
       <div></div>
     </footer>
   );
+}
+function search(event) {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const email = formData.get("queryEmail");
+
+  if (!email) {
+    alert("Please enter an email.");
+  } else {
+    alert(`Thank you! You've subscribed with ${email}.`);
+  }
 }

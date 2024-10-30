@@ -23,7 +23,7 @@ const home = () => {
               <NavLink to="/about">
                 <img
                   className="circle"
-                  src="Assets/teamPic.png"
+                  src="Assets/naishRaw.png"
                   alt="About Us Link"
                 ></img>
               </NavLink>
@@ -34,7 +34,7 @@ const home = () => {
               <NavLink to="/about">
                 <img
                   className="circle"
-                  src="Assets/teamPic.png"
+                  src="Assets/charlizeRaw.png"
                   alt="About Us Link"
                 ></img>
               </NavLink>
@@ -44,7 +44,7 @@ const home = () => {
             <div className="circle-img">
               <NavLink to="/about">
                 <img
-                  className="circle"
+                  className="tj-logo"
                   src="Assets/tj-logo.png"
                   alt="About Us Link"
                 ></img>
@@ -56,7 +56,7 @@ const home = () => {
               <NavLink to="/about">
                 <img
                   className="circle"
-                  src="Assets/teamPic.png"
+                  src="Assets/mikRaw.png"
                   alt="About Us Link"
                 ></img>
               </NavLink>
@@ -67,7 +67,7 @@ const home = () => {
               <NavLink to="/about">
                 <img
                   className="circle"
-                  src="Assets/teamPic.png"
+                  src="Assets/jackRaw.png"
                   alt="About Us Link"
                 ></img>
               </NavLink>
@@ -75,30 +75,40 @@ const home = () => {
           </div>
         </div>
 
+        <div className="title-links">
+          <h2>Read About Us!</h2>
+          <h2 className="mobile-hide">Watch Us</h2>
+        </div>
         <div className="links-grid">
           <div className="one">
-            <h2>News letters</h2>
             <div className="news-rectangle">
               <img
                 className="news-img"
-                src="Assets/teamPic.png"
+                src="Assets/seanSpike.png"
                 alt="news Link"
               ></img>
-              <p>
-                This week Team Jacob defeated the Crowns. It was a tough game,
-                but hardcore determination enabled them to gain this win.
-                <br />
+              <div className="text-link">
+                <p>
+                  This week Team Jacob defeated the Crowns. It was a tough game,
+                  but hardcore determination enabled them to gain this win.
+                  <br />
+                </p>
                 <NavLink to="/news">Click here to learn more</NavLink>
-              </p>
+              </div>
             </div>
           </div>
-          <div className="two">
-            <img
-              className="rectangle"
-              src="Assets/teamPic.png"
-              alt="About Us Link"
-            ></img>
+          <div>
+            <h2 className="desktop-hide">Watch Us</h2>
           </div>
+
+          <div className="two">
+            <video controls className="videoEric">
+              <source src="/Assets/ericSpike.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div className="h2-title">
+          <h1>Learn More About Us!</h1>
         </div>
         {/* Page Links */}
         <div className="circle-grid">
@@ -108,7 +118,7 @@ const home = () => {
                 <h2 className="link">News</h2>
                 <img
                   className="circle"
-                  src="Assets/teamPic.png"
+                  src="Assets/teamPhoto.png"
                   alt="About Us Link"
                 ></img>
               </NavLink>
@@ -130,7 +140,7 @@ const home = () => {
             <div className="circle-img">
               <NavLink to="/">
                 <img
-                  className="circle"
+                  className="tj-logo"
                   src="Assets/tj-logo.png"
                   alt="About Us Link"
                 ></img>
@@ -143,7 +153,7 @@ const home = () => {
                 <h2 className="link">Results</h2>
                 <img
                   className="circle"
-                  src="Assets/teamPic.png"
+                  src="Assets/netShot3.png"
                   alt="About Us Link"
                 ></img>
               </NavLink>
@@ -155,7 +165,7 @@ const home = () => {
                 <h2 className="link">FAQS</h2>
                 <img
                   className="circle"
-                  src="Assets/teamPic.png"
+                  src="Assets/moves.png"
                   alt="About Us Link"
                 ></img>
               </NavLink>
