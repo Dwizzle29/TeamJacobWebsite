@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const PlayerCard = ({ player }) => {
   const [hidden, setHidden] = useState(true);
@@ -17,12 +18,11 @@ const PlayerCard = ({ player }) => {
                 alt={`image-${player.id}`}
                 className="card-image"
               />
-              <p>
-                <span>{player.name} - </span>
-                <br />
-                {player.number}
+              <p className="player-name">
+                <span>{player.name} </span>
+                <span> {player.number}</span>
               </p>
-              <p>{player.favourite}</p>
+              <NavLink to="/NotFound">Learn More!</NavLink>
             </div>
           ) : (
             <div className="player-card">
@@ -31,12 +31,11 @@ const PlayerCard = ({ player }) => {
                 alt={`image-${player.id}`}
                 className="card-image"
               />
-              <p>
-                <span>{player.name} - </span>
-                <br />
-                {player.number}
+              <p className="player-name">
+                <span>{player.name} </span>
+                <span> {player.number}</span>
               </p>
-              <p>{player.favourite}</p>
+              <NavLink to="/NotFound">Learn More!</NavLink>
             </div>
           )}
         </div>

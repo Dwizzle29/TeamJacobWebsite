@@ -1,5 +1,5 @@
 /* Mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .about-box {
     margin-inline: 10%;
   }
@@ -13,26 +13,65 @@
     grid-template-columns: 1fr 1fr;
     place-items: center;
   }
-  .card-image {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    margin-top: 25px;
-    margin-inline: 25px;
+  .player-name {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 20px;
   }
   .player-card {
-    width: 212px;
-    height: 366px;
-    margin: 5px; /* Add some margin for spacing */
+    text-align: center;
+  }
+  .player-card a {
+    text-decoration: none;
+    color: #050f50;
+  }
+  .player-card a:hover {
+    text-decoration: none;
+    color: #050f50;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .card-image {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-inline: 10px;
+  }
+  .player-card {
+    width: 170px;
+    height: 280px;
+    margin-block-end: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
     border-radius: 5px; /* Optional: round corners */
     background-color: #71afd9;
     color: #050f50;
   }
+  .coach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  /* team timeline */
+  .timeline-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: #71afd96e;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+  .timeline-list {
+    list-style: none;
+    text-align: right;
+    font-weight: 300;
+  }
 }
 
 /* Larger Screens */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 851px) {
   .about-box {
     margin-inline: 10%;
   }
@@ -43,7 +82,32 @@
   }
   .player-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin-inline: auto;
+    min-width: 800px;
+  }
+  .player-name {
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .player-card a {
+    text-decoration: none;
+    color: #050f50;
+  }
+  .player-card a:hover {
+    text-decoration: none;
+    color: #050f50;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .coach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    text-align: center;
   }
   .card-image {
     width: 160px;
@@ -55,14 +119,37 @@
   .player-card {
     width: 212px;
     height: 366px;
-
-    flex: 0 1 calc(20% - 10px); /* Adjust width to fit five items in a row, minus margin */
     margin: 5px; /* Add some margin for spacing */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
     padding: 10px; /* Optional: add padding */
     border-radius: 5px; /* Optional: round corners */
     background-color: #71afd9;
     color: #050f50;
+    text-align: center;
+  }
+  /* team timeline */
+  .timeline-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: #71afd96e;
+    border-radius: 10px;
+  }
+  .timeline-list {
+    list-style: none;
+    font-weight: 300;
+  }
+  .timeline-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .timeline-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .timeline-3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
 }
 

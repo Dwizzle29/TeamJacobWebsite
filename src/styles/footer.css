@@ -100,7 +100,7 @@
   }
   .footer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     place-items: center;
     text-align: left;
     width: 100%;
@@ -126,12 +126,24 @@
     flex-wrap: nowrap;
     font-size: 10px;
   }
-  .footer-section .sign-up-email .text-input .btn {
-    border: 3px solid #2b3b1c;
-    padding: 10px;
+  .footer-section .sign-up-email .btn {
+    border: 1px solid #2b3b1c;
+    padding: 5px;
     background-color: #b5d6a664;
     color: #2b3b1c;
     border-radius: 10px;
+    margin-left: 5px;
+    max-width: 70px;
+  }
+  .footer-section .sign-up-email .btn:hover {
+    background-color: #2b3b1c;
+    cursor: pointer;
+    color: #f6f5e9;
+  }
+  .footer-section .sign-up-email .btn:active {
+    background-color: #2b3b1c;
+    cursor: pointer;
+    color: #f6f5e9;
   }
   .footer-section-2 div {
     text-align: end;
@@ -161,6 +173,11 @@
   .mobile-img {
     visibility: hidden;
     width: 0px;
+  }
+  .email-input {
+    max-width: 200px;
+    border: 1px solid #2b3b1c;
+    background-color: #f1ede9;
   }
 }
 .mdi--instagram {

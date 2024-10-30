@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className="header-container">
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="title-fix">
         <div className="title-container">
           <img
             src="Assets/tj-logo.png"
@@ -55,8 +55,8 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="nav-box">
-            <NavLink to="/notFound" onClick={closeMobileMenu}>
-              FAQs
+            <NavLink to="/news" onClick={closeMobileMenu}>
+              News
             </NavLink>
           </div>
         </nav>

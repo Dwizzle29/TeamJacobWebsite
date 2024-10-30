@@ -5,6 +5,7 @@ import News from "./Pages/news.jsx";
 import Rosters from "./Pages/rosters.jsx";
 import NotFound from "./Pages/pageNotFound.jsx";
 import Footer from "./components/footer.jsx";
+import Letter from "./Pages/letter.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/news" element={<News />}></Route>
           <Route path="/rosters" element={<Rosters />}></Route>
+          <Route path="/letter" element={<Letter />}></Route>
           <Route path="/notFound" element={<NotFound />}></Route>
         </Routes>
       </div>

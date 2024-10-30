@@ -13,7 +13,7 @@
   }
   .circle-grid {
     display: grid;
-    grid: 200px 200px 0px / auto-flow;
+    grid: 250px 200px 0px / auto-flow;
     place-items: center;
     align-content: space-between;
     justify-content: space-around;
@@ -71,6 +71,7 @@
     height: 200px;
     object-fit: cover;
     margin-right: 20px;
+    border: 4px solid #3c6179;
   }
   .news-rectangle {
     object-fit: cover;
@@ -296,6 +297,7 @@
   width: 200px;
   height: 200px;
   border-radius: 100px;
+
   object-fit: cover;
   position: relative;
   text-align: center;

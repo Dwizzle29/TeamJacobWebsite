@@ -26,3 +26,30 @@ nav {
 .App {
   min-height: 100vh;
 }
+.information {
+  margin-inline: 10%;
+  text-align: center;
+  list-style: none;
+  color: #050f50;
+}
+.information ul li {
+  list-style: none;
+  text-decoration: none;
+  color: #050f50;
+  font-size: 20px;
+  font-weight: 300;
+}
+.information ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #050f50;
+  font-size: 20px;
+  font-weight: 300;
+}
+.information ul li a:hover {
+  list-style: none;
+  text-decoration: none;
+  color: #2b3b1c;
+  font-size: 20px;
+  font-weight: 300;
+}

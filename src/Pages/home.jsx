@@ -13,10 +13,7 @@ const home = () => {
       </div>
       <div className="home-page">
         <h1>Welcome to Team Jacob!</h1>
-        <p>
-          Learn all about our volleyball team and come watch our games. Find
-          more information- <NavLink to=" /rosters"> here</NavLink>
-        </p>
+
         <div className="circle-grid">
           <div className="circle-box">
             <div className="circle-img">

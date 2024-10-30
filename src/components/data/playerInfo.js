@@ -6,6 +6,7 @@ const players = [
     number: 1,
     favourite: "me",
     image: "Assets/tj-logo.png",
+    player: true,
   },
   {
     id: 1,
@@ -14,6 +15,7 @@ const players = [
     number: 2,
     favourite: "me",
     image: "Assets/charlizeFront.png",
+    player: true,
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ const players = [
     jersey: "",
     number: 2,
     favourite: "me",
+    player: true,
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ const players = [
     jersey: "",
     number: 2,
     favourite: "me",
+    player: true,
   },
   {
     id: 5,
@@ -35,6 +39,7 @@ const players = [
     jersey: "",
     number: 2,
     favourite: "me",
+    player: true,
   },
   {
     id: 6,
@@ -42,6 +47,7 @@ const players = [
     jersey: "",
     number: 2,
     favourite: "me",
+    player: true,
   },
   {
     id: 7,
@@ -49,6 +55,7 @@ const players = [
     jersey: "",
     number: 2,
     favourite: "me",
+    player: true,
   },
   {
     id: 8,
@@ -56,6 +63,7 @@ const players = [
     jersey: "",
     number: 2,
     favourite: "me",
+    player: true,
   },
   {
     id: 9,
@@ -63,6 +71,7 @@ const players = [
     jersey: "",
     number: 2,
     favourite: "me",
+    player: true,
   },
   {
     id: 10,

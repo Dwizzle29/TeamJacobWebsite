@@ -13,9 +13,43 @@ export default function About() {
       <div className="about-box">
         <h1>Players</h1>
         <div className="player-grid">
-          {players.map((player) => (
-            <PlayerCard key={player.name} player={player} />
-          ))}
+          {players
+            .filter((player) => player.player)
+            .map((player) => (
+              <PlayerCard key={player.name} player={player} />
+            ))}
+        </div>
+        <h1>Coaches</h1>
+        <div className="coach-grid">
+          {players
+            .filter((player) => player.coach)
+            .map((player) => (
+              <PlayerCard key={player.name} player={player} />
+            ))}
+        </div>
+        <h1>Team Timeline</h1>
+        <div className="timeline-box">
+          <div className="timeline-1">
+            <h3>Past Members</h3>
+            <ul className="timeline-list">
+              <li>Ashton Hemmings</li>
+              <li>Bell Bank</li>
+            </ul>
+          </div>
+          <div className="timeline-2">
+            <h3>Newest Members</h3>
+            <ul className="timeline-list">
+              <li>Gabe Petkaris</li>
+              <li>Brandon Williams</li>
+            </ul>
+          </div>
+          <div className="timeline-3">
+            <h3>Oldest Members</h3>
+            <ul className="timeline-list">
+              <li>Sean Farrar</li>
+              <li>Eric Jroszczewski</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -28,9 +62,10 @@ const players = [
     name: "Sean Farrar",
     jersey: "Timberlake",
     number: 1,
-    favourite: "me",
-    image: "Assets/tj-logo.png",
-    imageBack: "Assets/tj-logo.png",
+
+    image: "Assets/seanFront.png",
+    imageBack: "Assets/seanBack.png",
+    player: true,
   },
   {
     id: 1,
@@ -40,6 +75,7 @@ const players = [
     favourite: "me",
     image: "Assets/charlizeFront.png",
     imageBack: "Assets/charlizeBack.png",
+    player: true,
   },
   {
     id: 3,
@@ -49,6 +85,7 @@ const players = [
     favourite: "me",
     image: "Assets/kateFront.png",
     imageBack: "Assets/kateBack.png",
+    player: true,
   },
   {
     id: 4,
@@ -58,6 +95,7 @@ const players = [
     favourite: "me",
     image: "Assets/MikFront.png",
     imageBack: "Assets/MikBack.png",
+    player: true,
   },
   {
     id: 5,
@@ -67,6 +105,7 @@ const players = [
     favourite: "me",
     image: "Assets/naishFront.png",
     imageBack: "Assets/naishBack.png",
+    player: true,
   },
   {
     id: 6,
@@ -76,6 +115,7 @@ const players = [
     favourite: "me",
     image: "Assets/jackFront.png",
     imageBack: "Assets/jackBack.png",
+    player: true,
   },
   {
     id: 7,
@@ -85,6 +125,7 @@ const players = [
     favourite: "me",
     image: "Assets/tj-logo.png",
     imageBack: "Assets/tj-logo.png",
+    player: true,
   },
   {
     id: 8,
@@ -94,6 +135,7 @@ const players = [
     favourite: "me",
     image: "Assets/tj-logo.png",
     imageBack: "Assets/tj-logo.png",
+    player: true,
   },
   {
     id: 9,
@@ -103,6 +145,7 @@ const players = [
     favourite: "me",
     image: "Assets/tj-logo.png",
     imageBack: "Assets/tj-logo.png",
+    player: true,
   },
   {
     id: 10,
