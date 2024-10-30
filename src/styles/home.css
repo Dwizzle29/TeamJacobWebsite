@@ -51,7 +51,7 @@
   .link {
     display: none;
   }
-  .circle-img:hover .link {
+  .circle-img .link {
     display: flex;
     margin-inline: auto;
     margin-block: auto;
@@ -249,7 +249,9 @@
   .title-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
     place-items: center;
+    margin-inline: auto;
   }
   .rectangle p {
     display: flex;
